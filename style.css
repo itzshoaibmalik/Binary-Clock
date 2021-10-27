@@ -1,0 +1,73 @@
+@import url("https://rsms.me/inter/inter.css");
+
+:root
+{
+	background: #111115;
+	color: white;
+	font-family: "Inter", "Avenir Next", Avenir, Arial, Futura;
+}
+
+:root,
+:root *
+{
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-webkit-touch-callout: none;
+	-webkit-tap-highlight-color: transparent;
+	-ms-overflow-style: none;
+	scrollbar: none;
+	box-sizing: border-box;
+	text-align: center;
+	outline: none;
+}
+
+#container
+{
+	display: grid;
+	grid-template-rows: 1fr 2rem;
+	grid-template-columns: 1fr;
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#clock,
+#binclock
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#clock
+{
+	grid-row: 2;
+}
+
+#binclock
+{
+	grid-row: 1;
+	
+	font-family: Menlo, Monospace;
+	font-size: 5rem;
+}
+
+#binclock blue
+{
+	color: #00CCFF;
+}
+
+#binclock red
+{
+	color: #FF0600;
+}
